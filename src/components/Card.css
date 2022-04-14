@@ -1,0 +1,16 @@
+.SquareFather {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 500px;
+}
+
+.SquareSon {
+    height: 400px;
+    width: 400px;
+    background-color: blue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
