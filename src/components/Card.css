@@ -2,7 +2,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 500px;
 }
 
 .SquareSon {
@@ -12,5 +11,10 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 
+.TextSquare {
+    color: white;
+}
