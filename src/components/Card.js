@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import './Card.css';
 
 
-function Card() {
+function Card(props) {
 
     const [text, setText] = useState('Esto es un cuadrado que no consume drogas');
     const drugsAlert = () => {
@@ -11,7 +11,7 @@ function Card() {
     }
     return(
         <div className="SquareFather">
-            <div onClick={drugsAlert} className="SquareSon">
+            <div onClick={drugsAlert} className="SquareSon" style={{backgroundColor: props.color,}}>
                 <h2 className="TextSquare">{ text }</h2>
             </div>
         </div>
