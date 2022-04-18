@@ -10,7 +10,7 @@ function App() {
         <Header />
       </header>
       <body>
-        <Card color="red" />
+        <Card color="red" height="100px" width="100px"/>
       </body>
       <footer>
         <Footer />

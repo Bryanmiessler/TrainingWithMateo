@@ -11,7 +11,7 @@ function Card(props) {
     }
     return(
         <div className="SquareFather">
-            <div onClick={drugsAlert} className="SquareSon" style={{backgroundColor: props.color,}}>
+            <div onClick={drugsAlert} className="SquareSon" style={{backgroundColor: props.color, height: props.height, width: props.width,}}>
                 <h2 className="TextSquare">{ text }</h2>
             </div>
         </div>
