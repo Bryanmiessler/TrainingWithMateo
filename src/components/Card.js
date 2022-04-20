@@ -4,15 +4,26 @@ import './Card.css';
 
 function Card(props) {
 
-    const [text, setText] = useState('Esto es un cuadrado que no consume drogas');
-    const drugsAlert = () => {
-        // alert('Ojito con el vicio');
-        setText('No fumes tkm');
+    const [innerHeight, setInnerHeight] = useState(500);
+    const [innerWidth, setInnerWidth] = useState(500);
+    const [color, setColor] = useState('red');
+    const [counter, setCounter] = useState(0);
+
+    const squareCounter = () =>{
+        if(counter < 5){
+            setCounter(counter + 1);
+        }else{
+            return setCounter(0);
+        };
+        setInnerHeight(100);
+        setInnerWidth(100);
+        setColor('black');
     }
     return(
         <div className="SquareFather">
-            <div onClick={drugsAlert} className="SquareSon" style={{backgroundColor: props.color, height: props.height, width: props.width,}}>
-                <h2 className="TextSquare">{ text }</h2>
+            <div onClick={squareCounter} className="SquareSon" style={{backgroundColor: color, height: innerHeight, width: innerWidth}}>
+                <h2 className="TextSquare">{ counter }</h2>
+                
             </div>
         </div>
     );   

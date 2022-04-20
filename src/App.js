@@ -9,9 +9,9 @@ function App() {
       <header className="App-header">
         <Header />
       </header>
-      <body>
+      <div>
         <Card color="red" height="100px" width="100px"/>
-      </body>
+      </div>
       <footer>
         <Footer />
       </footer>
