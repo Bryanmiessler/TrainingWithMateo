@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import './Card.css';
+import Controller from "./Controller";
 
 
 function Card(props) {
@@ -19,11 +20,16 @@ function Card(props) {
         setInnerWidth(100);
         setColor('black');
     }
+
+    console.log(props.selected);
+
     return(
         <div className="SquareFather">
             <div onClick={squareCounter} className="SquareSon" style={{backgroundColor: color, height: innerHeight, width: innerWidth}}>
                 <h2 className="TextSquare">{ counter }</h2>
-                
+            </div>
+            <div className="Controller">
+                <Controller selected={props.selected} setSelected={props.setSelected} selectedButton={props.selectedButton} onClick={squareCounter}/>
             </div>
         </div>
     );   

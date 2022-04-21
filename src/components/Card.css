@@ -2,6 +2,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-direction: column;
 }
 
 .SquareSon {
@@ -17,4 +18,12 @@
 
 .TextSquare {
     color: white;
+}
+
+.Controller {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    margin: 50px;
 }
