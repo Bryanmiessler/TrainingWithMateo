@@ -33,11 +33,12 @@ const usersFromMedellin = users.filter((user) => {
   return user.city === 2;
 });
 
-console.log({usersFromMedellin});
+// console.log({usersFromMedellin});
 
 // Formats the users from Medellin to display city name instead of city id
-const usersWithCitiesFormatted = usersFromMedellin.map((user) => {
+const usersWithCitiesFormatted = usersFromMedellin.map((user, index) => {
   const city = cities.filter((city) => city.id === user.city)[0].name;
+  console.log(city, index);
 
   return {
     ...user,
@@ -51,4 +52,4 @@ const usersWithoutCity = users.map((user) => {
 
 // const medellin = cities.filter((city) => city.id === 2);
 
-console.log({ usersWithCitiesFormatted });
+// console.log({ usersWithoutCity });

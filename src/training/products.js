@@ -14,13 +14,21 @@ const products = [
 // Returns products with price greater than 500 (filter only)
 
 const productsGreaterThan500 = products.filter((product) => product.price > 500);
-console.log({productsGreaterThan500});
+// console.log({productsGreaterThan500});
 
 // Returns products with price lower than 500 (filter only)
 
 const productsLowerThan500 = products.filter((product) => product.price < 500);
-console.log({productsLowerThan500});
+// console.log({productsLowerThan500});
 
 
 // Return products without id, example { name: 'Huawei P30 Pro', price: 699.99 }
 
+const productWithoutId = products.map((product) => {
+    return {
+        name: product.name,
+        price: product.price
+    }
+})
+
+console.log({productWithoutId});
