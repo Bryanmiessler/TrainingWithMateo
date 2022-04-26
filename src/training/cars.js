@@ -13,10 +13,33 @@ const cars = [
 
 // Returns cars with price greater than 30000 (filter only)
 
+const carsGreaterThan30000 = cars.filter((car) => car.price > 30000);
+
+console.log({carsGreaterThan30000});
+
 // Returns cars with price lower than 30000 (filter only)
+
+const carsLowerThan30000 = cars.filter((car) => car.price < 30000);
+
+console.log({carsLowerThan30000});
 
 // Returns cars with red color (filter only)
 
+const redCars = cars.filter((car) => car.color === "red");
+
+console.log({redCars});
+
 // Returns cars with black color (filter only)
 
+const blackCars = cars.filter((car) => car.color === "black");
+
+console.log({blackCars});
+
 // Return cars without id, example { name: 'Lexus', color: "pink", price: 55000 } (map only)
+
+const carWithoutId = cars.map((car) => ({
+    name: car.name,
+    color: car.color
+}));
+
+console.log({carWithoutId});

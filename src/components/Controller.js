@@ -2,7 +2,7 @@
 
 function Controller(props) {
 
-  console.log(props.selected);
+
 
   return (    
     <div>

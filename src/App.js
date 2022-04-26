@@ -15,6 +15,8 @@ function App() {
 
   }
 
+  console.log(selectedButton);
+
   // function clickButtons(){
   //   if(props.selected === true){
   //     return setClick('Expandir');
