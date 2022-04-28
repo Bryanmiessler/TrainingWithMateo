@@ -58,8 +58,24 @@ const universities = [
 
 // Returns posts from authorId 1 (filter)
 
+postAuthorId1 = posts.filter((post) => {
+  return post.authorId === 1;
+})
+
+// console.log({postAuthorId1});
+
 // Returns posts with authorName instead of authorId (map)
 
+const authorIdReplaced = posts.map((post) =>{
+  return {
+    id: post.id,
+    title: post.title,
+    body: post.body,
+    authorName: authors[name]
+  }
+  
+})
+console.log(authorIdReplaced);
 // Returns posts without id, example { title: 'Post 1', body: 'This is the body of post 1', authorName: 'Author 1' } (map only)
 
 // Returns posts with author information, example { title: 'Post 1', body: 'This is the body of post 1', author: { id: 1, name: "Author 1", profile_image: "https://via.placeholder.com/150", personal_information: { university: 1, age: 20, friends: [2, 3, 4, 5, 6, 7, 8, 9, 10], }, },  } (map only)
